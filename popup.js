@@ -29,7 +29,7 @@ var nanoDonationAmountElement = $('nano-donation-amount')
 var nanoAmountErrorElement = $('nano-amount-error')
 var nanoDonationSubmitElement = $('nano-donation-submit')
 var footerLinkNanochartsElement = $('footer-link-nanocharts')
-var footerLinkNanoDonateElement = $('footer-link-nano-donate')
+/*var footerLinkNanoDonateElement = $('footer-link-nano-donate')*/
 var footerLinkGithubElement = $('footer-link-github')
 var backLinkElement = $('back-link')
 var historyLinkElement = $('history-link')
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function () {
           event.preventDefault()
           var nanoDonationAmountElementValue = parseFloat(nanoDonationAmountElement.value)
           var nanoDonationAmount = parseFloat((nanoDonationAmountElementValue * raiMultiplier).toFixed(0))
-          var nanoDonationAmountRaw = nanoDonationAmount + '000000000000000000000000'
+          var nanoDonationAmountRaw = nanoDonationAmount + '000000000000000000000'
           var token
 
           // Display debug information
@@ -431,13 +431,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Check whether to activate the links in the footer
       // (to prevent clicking away during the donation process)
-      if (footerActive) {
+      /*if (footerActive) {
         footerLinkNanochartsElement.innerHTML = '<a href="https://nanocharts.info/" target="_blank">Nano Charts</a>'
         footerLinkNanoDonateElement.innerHTML = '<a href="https://nanocharts.info/nano-donate.html" target="_blank">Nano Donate (' + version + ')</a>'
       } else {
         footerLinkNanochartsElement.innerHTML = 'Nano Charts'
         footerLinkNanoDonateElement.innerHTML = 'Nano Donate (' + version + ')'
-      }
+      }*/
 
       // Check whether to activate the link to Donation History in the header
       // (to prevent clicking away during the donation process)
@@ -456,11 +456,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Check whether to activate the link to GitHub in the footer
       // (to prevent clicking away during the donation process)
-      if (githubActive) {
+      /*if (githubActive) {
         footerLinkGithubElement.innerHTML = '<a href="https://github.com/kilkelly/nano-donate" target="_blank">Source Code on GitHub</a>'
       } else {
         footerLinkGithubElement.innerHTML = ''
-      }
+      }*/
     }
 
   })

@@ -130,13 +130,12 @@ sup {
 .suggestion {
   display: inline-block;
   color: #FFF;
-  min-width: 2rem;  
-  max-width: 2rem;  
+  min-width: 2rem; 
   border-radius: 5px;
   cursor: pointer;
   margin: 0.3rem 0;
-  padding-left: 3rem;
-  background: #4a90e2 url('/images/icon-nano-white.png') 14px 5px no-repeat 
+  background: #4a90e2; 
+  border: 3px;
 }
 
 /*---------------------------*/

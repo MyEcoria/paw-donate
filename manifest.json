@@ -1,7 +1,7 @@
 {
-  "name": "Nano Donate",
-  "version": "1.3.0",
-  "description": "Nano donations made easy!",
+  "name": "PAW Donate",
+  "version": "1.0.0",
+  "description": "PAW donations made easy!",
   "permissions": [
     "storage"
   ],
