@@ -9,7 +9,7 @@ Array.from(document.getElementsByTagName('paw-donate')).map(function (nanoDonate
   let addressOwner = nanoDonateTag.getAttribute('data-address-owner')
 
   // Add to array of Nano addresses if Nano address and owner name are found
-  if (/^(paw_|nano_)[13][13-9a-km-uw-z]{59}$/.test(address) && addressOwner) {
+  if (/^(paw_|paw_)[13][13-9a-km-uw-z]{59}$/.test(address) && addressOwner) {
     nanoDonateEntries.push({
       title,
       image,
@@ -24,7 +24,7 @@ Array.from(document.getElementsByTagName('paw-donate')).map(function (nanoDonate
 Array.from(document.getElementsByTagName('meta')).filter(function (metaTag) {
   if (metaTag.getAttribute('name') === 'nano') {
     let nanoAddress = metaTag.getAttribute('content')
-    if (/^(paw_|nano_)[13][13-9a-km-uw-z]{59}$/.test(nanoAddress)) {
+    if (/^(paw_|paw_)[13][13-9a-km-uw-z]{59}$/.test(nanoAddress)) {
       nanoDonateEntries.push({
         metaTag: true,
         address: nanoAddress,
